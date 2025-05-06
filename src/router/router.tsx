@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 //未登入
 import Home from "../Pages/Home";
-import SignIn from "../Pages/Signin";
+import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
 import Layout from "../Layout/Layout";
 import NotFound from "../Pages/NotFound";

@@ -14,7 +14,7 @@ export default function SignIn() {
     const handleGoogleSignIn = async () => {
 
         try {
-            const { data, error } = await supabase.auth.signInWithOAuth({
+            const {error } = await supabase.auth.signInWithOAuth({
                 provider: 'google',
             })
 
@@ -24,6 +24,8 @@ export default function SignIn() {
             }
 
             console.log('正在導向 Google 登入頁面...')
+            navigate('/user')
+
         }
         catch (err) {
             console.log('發生錯誤')

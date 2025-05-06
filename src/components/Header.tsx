@@ -12,7 +12,7 @@ export default function Header() {
 
     const getIsSignIn = async () => {
         try {
-            const { data, error } = await supabase.auth.getSession()
+            const { data } = await supabase.auth.getSession()
 
             if (data.session) {
                 setIsSignIn(!!data.session);
